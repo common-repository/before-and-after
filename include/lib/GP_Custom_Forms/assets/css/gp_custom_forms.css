@@ -1,0 +1,36 @@
+.gp_custom_form {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.gp_custom_form .field_wrapper {
+	margin: 10px 0 20px;
+}
+
+.gp_custom_form .has_validation_error {
+	border: 2px solid darkred;
+	padding: 8px;
+}
+
+.gp_custom_form .checkbox_wrapper.has_validation_error {
+	border: 2px solid darkred;
+	padding: 4px 2px 0px 8px;
+}
+
+.gp_custom_form .checkbox_wrapper.has_validation_error input {
+	border: none;
+}
+
+.gp_custom_form .error_message,
+.gp_custom_form .required_field_message {
+	color: darkred;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+/* Star ratings */
+.gp_cf_field_wrap .rateit button.rateit-reset {
+	transition: none;
+	margin-left: 8px;
+	margin-top: 1px;
+	float: right;
+}

@@ -1,0 +1,126 @@
+{
+    "form": {
+        "settings": {
+            "title": "Feedback Form"
+        },
+        "fields": [
+            {
+                "name": "heading_1",
+                "heading_text": "Personal Information",
+                "subheading_text": "This information will not be shared.",
+                "heading_type": "h3",
+                "type": "heading"
+            },
+            {
+                "name": "your_name",
+                "title": "Name",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "text",
+                "placeholder": ""
+            },
+            {
+                "name": "email",
+                "title": "Email",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "email",
+                "placeholder": ""
+            },
+            {
+                "name": "phone",
+                "title": "Phone",
+                "description": "",
+                "default": "",
+                "required": "0",
+                "type": "phone",
+                "placeholder": ""
+            },
+            {
+                "name": "heading_2",
+                "heading_text": "Rate Your Experience",
+                "subheading_text": "Please rate each aspect of your experience, on a scale from 1-10, with 1 being the worst and 10 being the best.",
+				"heading_type": "h3",
+                "type": "heading"
+            },
+            {
+                "name": "rating_overall",
+                "title": "Overall Experience",
+                "description": "",
+                "default": "",
+                "max": "10",
+                "required": "1",
+                "type": "rating",
+                "placeholder": ""
+            },
+            {
+                "name": "rating_staff",
+                "title": "Friendliness of Staff",
+                "description": "",
+                "default": "",
+                "max": "10",
+                "required": "1",
+                "type": "rating",
+                "placeholder": ""
+            },
+            {
+                "name": "rating_quality",
+                "title": "Quality of the product",
+                "description": "",
+                "default": "",
+                "max": "10",
+                "required": "1",
+                "type": "rating",
+                "placeholder": ""
+            },
+            {
+                "name": "rating_value",
+                "title": "Value for the money",
+                "description": "",
+                "default": "",
+                "max": "10",
+                "required": "1",
+                "type": "rating",
+                "placeholder": ""
+            },
+            {
+                "name": "rating_facilities",
+                "title": "Cleanliness of the facilities",
+                "description": "",
+                "default": "",
+                "max": "10",
+                "required": "1",
+                "type": "rating",
+                "placeholder": ""
+            },
+            {
+                "name": "rating_recommend",
+                "title": "How likely are you to recommend us to a friend or colleague?",
+                "description": "",
+                "default": "",
+                "max": "10",
+                "required": "1",
+                "type": "rating",
+                "placeholder": ""
+            },
+            {
+                "name": "comments",
+                "title": "Other Comments",
+                "description": "Please share any other comments you may have:",
+                "default": "",
+                "required": "0",
+                "type": "textarea",
+                "placeholder": ""
+            }
+        ]
+    },
+    "goal": {
+        "title": "Collect User Feedback",
+		"after_action": "free_text",
+        "after_values": {
+			"free_text": "Thank you! We will contact you shortly."
+		}
+    }
+}

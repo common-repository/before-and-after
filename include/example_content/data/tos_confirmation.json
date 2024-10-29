@@ -1,0 +1,32 @@
+{
+    "form": {
+        "settings": {
+            "title": "Terms Of Service",
+			"email_subject": "TOS Completed"
+        },
+        "fields": [
+            {
+                "name": "terms_of_service",
+                "title": "Terms Of Service",
+                "content": "Please read and agree to the following Terms of Service before you continue.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin accumsan, risus at volutpat dapibus, risus diam eleifend felis, in faucibus dui massa egestas quam. Integer commodo, quam quis vehicula pharetra, elit quam auctor erat, non malesuada sem enim vitae leo. Suspendisse tincidunt in erat eget fermentum. Maecenas quis malesuada justo, id ultricies libero. Suspendisse potenti. Phasellus sodales accumsan mauris. Nunc velit tortor, blandit ut posuere at, sagittis id lectus. Etiam eget nisi elit. Aliquam eleifend fringilla hendrerit. Pellentesque pellentesque auctor efficitur. Aliquam pellentesque imperdiet porttitor. Donec viverra lacus libero, id mollis mauris aliquam nec. Cras in enim ultrices, ornare justo eu, tristique odio. In vitae ante purus. Ut gravida magna ac nibh interdum lacinia. Nullam at euismod purus.",
+                "add_paragraphs": "1",
+                "type": "html"
+            },
+            {
+                "name": "agreed_to_tos",
+                "title": "I have read and agree with the terms of service.",
+                "description": "",
+                "required": "1",
+                "type": "checkbox",
+				"default": "0"
+            }
+        ]
+    },
+    "goal": {
+        "title": "Agree To TOS",
+		"after_action": "free_text",
+        "after_values": {
+			"free_text": ""
+		}
+    }
+}

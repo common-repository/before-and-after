@@ -1,0 +1,274 @@
+#form_editor_start_page {
+	padding: 0 10px 20px;
+}
+#form_editor_start_page #form_editor_wrapper {
+	display: none;
+}
+
+#form_editor_wrapper {
+	margin-top: 20px;
+}
+
+.gp_custom_forms_form {
+	padding: 10px 10px 10px 10px;
+	max-width: 800px;
+	max-width: 550px;
+	display: inline-block;
+}
+
+.gp_custom_forms_editor_toolbox {
+	background-color: white;
+	display: inline-block;
+	height: 600px;
+	margin-top: 10px;
+	padding: 4px 0;
+	vertical-align: top;
+	width: 250px;
+}
+
+.gp_custom_forms_editor_toolbox #gp_custom_forms_save_button {
+	display: block;
+	width: 100%;
+}
+
+.gp_custom_forms_editor_toolbox #gp_custom_forms_save_message {
+	font-weight: bold;
+	margin-top: 10px;
+	padding-left: 10px;
+	color: green;
+}
+
+.available_fields li {
+    position: relative;
+}
+
+.available_fields li > .dashicons {
+    position: absolute;
+	left: -27px;
+	top: 3px;
+}
+
+.gp_custom_forms_all_fields_wrapper {
+	margin-top: 11px;
+	min-height: 150px; /* important when all fields are deleted. else there is nowhere to drop new fields! */
+}
+.gp_custom_forms_all_fields_wrapper:empty {
+	border: 2px dashed gray;
+	position: relative;
+}
+
+.gp_custom_forms_all_fields_wrapper:empty::after {
+	content: "Drop new fields here";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -.75em;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+
+.gp_custom_forms_all_fields_wrapper li > .dashicons {
+	display: none;
+}
+
+.gp_custom_forms_all_fields_wrapper .ui-sortable-placeholder {
+	background-color: white;
+	border: 2px dashed gray;
+	height: 140px !important;
+	max-width: 100%;
+	display: block;
+	visibility: visible !important;
+}
+		
+.gp_custom_forms_editor_toolbox .ui-sortable-helper {
+	background-color: white;
+	border: 1px solid lightgray;
+	border-left-width: 40px;
+	display: block;
+	line-height: 32px !important;
+	height: 32px !important;
+	padding-left: 12px;
+	width: 550px;
+	visibility: visible !important;
+	position: relative;
+}
+		
+.gp_custom_forms_editor_toolbox .gp_custom_forms_dragging .dashicons {
+    position: absolute;
+	left: -28px;
+	top: 10px;
+}
+		
+.gp_custom_forms_all_fields_wrapper .highlight_field {
+		border: 4px solid green;
+}
+
+.gp_custom_forms_all_fields_wrapper .gp_custom_field_toolbox_handle {
+	display: none;
+}
+
+.gp_custom_forms_editor_toolbox .gp_custom_field_template {
+	display: none;
+}
+.gp_custom_forms_editor_toolbox .gp_custom_field_toolbox_handle {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gp_custom_forms_editor_toolbox > hr {
+	margin: 20px 0;
+}
+
+.gp_custom_forms_editor_toolbox > h3 {
+	margin: 10px 10px 20px 10px;
+	font-size: 1em;
+}
+
+.gp_custom_forms_editor_toolbox .available_fields {
+	margin: 0 10px;
+}
+
+.gp_custom_forms_editor_toolbox .available_fields .custom_field {
+	background-color: white;
+	border: 1px solid lightgray;
+	border-left-width: 32px;
+	margin: 0 0 10px;
+	padding: 4px 4px 4px 8px;
+}
+
+.gp_custom_forms_edit_field_wrapper
+{
+	background-color: white;
+	border: 1px solid lightgray;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	min-width: 542px;
+	padding: 49px 0 10px;
+	position: relative;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details_wrapper
+{
+	/* padding: 75px 10px 10px 20px; */
+	padding: 26px 20px 10px 20px;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_title {
+	background-color: #efefef;
+	border-bottom: 1px solid lightgray;
+	left: 0;
+	margin: 0;
+	padding: 10px 50px 10px 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_title .field_type {
+    font-size: .65em;
+    display: block;
+    padding-top: 3px;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_label .field_type {
+	font-size: .8em;
+	color: dark-gray;
+	float: right;
+	
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details {
+	margin-bottom: 8px;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details label {
+	font-weight: bold;
+	display: block;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details input[type="text"] {
+	width: 500px;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details select {
+	min-width: 240px;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details .description {
+	margin-bottom: 15px;
+}
+
+.gp_custom_forms_collapse_toggle {
+	height: 24px;
+	position: absolute;
+	right: 36px;
+	text-align: center;
+	top: 8px;
+	width: 24px;
+	z-index: 100;
+}
+
+.gp_custom_forms_drag_handle {
+	height: 24px;
+	position: absolute;
+	right: 8px;
+	text-align: center;
+	top: 8px;
+	width: 24px;
+	z-index: 100;
+}
+
+.gp_custom_forms_edit_field_wrapper .delete_field_wrapper {
+	text-align: right;
+	margin-top: 20px;
+}
+
+.gp_custom_forms_edit_field_wrapper .delete_field_link {
+	color: red !important;
+}
+
+/* Select fields */
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_options_panel {
+	margin-top: 10px;
+}
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_options_panel > label {
+	margin-bottom: 4px;
+}
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_options_table th {
+	color: gray;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_options_table input[type="text"] {
+	width: 99%;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_options_table .delete_options_row {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_options_table .delete_options_row .dashicons {
+	margin-left: 0;
+	margin-top: 4px;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_options_table .delete_options_row,
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_options_table .add_options_row {
+	text-decoration: none;
+}
+
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_button {
+	margin: 5px auto;
+}
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_button .dashicons {
+	margin-top: 5px;
+	margin-left: -6px;
+}
+
+/* Checkbox fields */
+.gp_custom_forms_edit_field_wrapper .field_details .gp_custom_forms_on_off_radio > label {
+	display: inline-block;
+	font-weight: normal;
+	padding-right: 10px;
+}

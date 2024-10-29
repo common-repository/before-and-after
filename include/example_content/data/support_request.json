@@ -1,0 +1,84 @@
+{
+    "form": {
+        "settings": {
+            "title": "Support Request",
+			"email_subject": "Support request from: {{name}} {{email}}"
+        },
+        "fields": [
+            {
+                "name": "your_name",
+                "title": "Name",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "text",
+                "placeholder": ""
+            },
+            {
+                "name": "email",
+                "title": "Email",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "email",
+                "placeholder": ""
+            },
+            {
+                "name": "website_url",
+                "title": "Website URL",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "text",
+                "placeholder": ""
+            },
+			{
+                "name": "product_name",
+                "title": "Which product can we help with?",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "select",
+				"options": [
+					{
+						"value": "product_1",
+						"label": "Product #1"
+					},
+					{
+						"value": "product_2",
+						"label": "Product #2"
+					},
+					{
+						"value": "product_3",
+						"label": "Product #3"
+					},
+					{
+						"value": "product_4",
+						"label": "Product #4"
+					},
+					{
+						"value": "other",
+						"label": "Other"
+					}
+				],
+                "placeholder": ""
+            },
+            {
+                "name": "message",
+                "title": "Your Message",
+                "description": "What can we help with today?",
+                "default": "",
+                "required": "1",
+                "type": "textarea",
+                "placeholder": ""
+            }
+        ]
+    },
+    "goal": {
+        "title": "Submit A Support Request",
+		"after_action": "free_text",
+        "after_values": {
+			"free_text": "Your request has been received. A member of our team will be in touch as soon as possible."
+		}
+    }
+}

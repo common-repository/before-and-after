@@ -1,0 +1,53 @@
+{
+    "form": {
+        "settings": {
+            "title": "Contact Form",
+			"email_subject": "New contact from: {{name}} {{email}}"
+        },
+        "fields": [
+            {
+                "name": "your_name",
+                "title": "Name",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "text",
+                "placeholder": ""
+            },
+            {
+                "name": "email",
+                "title": "Email",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "email",
+                "placeholder": ""
+            },
+            {
+                "name": "phone",
+                "title": "Phone",
+                "description": "",
+                "default": "",
+                "required": "0",
+                "type": "phone",
+                "placeholder": ""
+            },
+            {
+                "name": "message",
+                "title": "Your Message",
+                "description": "What can we help with today?",
+                "default": "",
+                "required": "1",
+                "type": "textarea",
+                "placeholder": ""
+            }
+        ]
+    },
+    "goal": {
+        "title": "Complete the Contact Us Form",
+		"after_action": "free_text",
+        "after_values": {
+			"free_text": "Thank you for your message! A member of our team will be in touch as soon as possible."
+		}
+    }
+}

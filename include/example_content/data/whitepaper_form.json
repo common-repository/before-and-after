@@ -1,0 +1,63 @@
+{
+    "form": {
+        "settings": {
+            "title": "Whitepaper Download Form",
+			"email_subject": "New Whitepaper download from: {{name}} {{email}}"
+        },
+        "fields": [
+            {
+                "name": "your_name",
+                "title": "Name",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "text",
+                "placeholder": ""
+            },
+            {
+                "name": "email",
+                "title": "Email",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "email",
+                "placeholder": ""
+            },
+            {
+                "name": "how_did_you_hear",
+                "title": "How did you hear about us?",
+                "description": "",
+                "default": "",
+                "required": "1",
+                "type": "select",
+				"options": [
+					{
+						"value": "tv",
+						"label": "Television"
+					},
+					{
+						"value": "internet",
+						"label": "Internet"
+					},
+					{
+						"value": "friend",
+						"label": "Friend"
+					},
+					{
+						"value": "other",
+						"label": "Other"
+					}
+				],
+                "placeholder": ""
+            }
+        ]
+    },
+    "goal": {
+        "title": "Complete the Whitepaper Form",
+        "after_action": "file_url",
+        "after_values": {
+			"file_url": "{plugin_dir}include/example_content/assets/example.pdf",
+			"download_link_text": "Download The File Here"
+		}
+    }
+}
